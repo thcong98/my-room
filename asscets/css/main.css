@@ -37,6 +37,7 @@
 
 .navbar__link:hover {
     text-decoration: underline;
+    color: white;
 }
 
 .navbar__link--blue{
@@ -103,6 +104,7 @@
     border-radius:6px;
     background-color: var(--white-color);
     font-size: 14px;
+    border: none;
 }
 
 .filter-item:first-child {
@@ -117,7 +119,8 @@
 .filter-item__submit {
     background-color: #0071c2;
     color:var(--white-color);
-    justify-content: content;
+    text-align: center;
+    display: inherit;
 }
 
 .fa-solid {
@@ -191,20 +194,23 @@
 }
 
 .modal {
-    display: none;
+    background-color: rgba(0,0,0,.5);
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    /* background: rgba(0, 0, 0, 0.4); */
+    display: none;
     justify-content: center;
-    display: flex;
     align-items: center;
+    z-index: 9999;
+}
+
+.open {
+    display: flex;
 }
 
 .modal-container {
-    display: none;
     width: 700px;
     background: #fff;
     min-height: 200px;
@@ -226,11 +232,13 @@
 .modal-content {
     text-align: center;
     flex:1;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .modal-body {
     min-height: 410px;
+    padding: 0 24px;
 }
 
 .modal-body__ranger {
@@ -247,7 +255,7 @@
 
 .ranger-ruler {
     height: 4px;
-    margin: 0 28px;
+    margin: 0 24px;
     background-color: #ff6600;
     border-radius: 10%;
     justify-content: space-between;
@@ -257,27 +265,27 @@
     right: auto;
     left: auto;
     justify-content: space-between;
-    top: 25%;
+    top: 27%;
     margin: 0 10px;
     display: flex;
     flex: auto;
-    width: 670px;
+    width: 624px;
     position: absolute;
 }
 
 .ranger-circle {
-    background-color: black;
+    background-color: white;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-
+    box-shadow: 1px 1px 1px 1px #888888;
 }
 
 .ranger-value {
-    margin: 0 28px;
-    display: flex;
+display: flex;
    justify-content: space-between;
    font-size: 12px;
+   margin: 12px 24px 0px;
 }
 
 .ranger-start,
@@ -314,3 +322,23 @@
     padding: 8px;
 }
 
+.modal-room_list {
+    margin-top: 0 4px ;
+}
+
+.modal-room_item{
+    list-style: none;
+    padding: 8px 12px;
+    margin: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.list-province {
+    overflow: auto;
+    max-height: 460px;
+}
+
+.item-province {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+}

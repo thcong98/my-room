@@ -58,26 +58,26 @@
                 <div class="grid">
                     <div class="filter-top">
                         <div class="filter-body">
-                            <div class="filter-item filter-item__select">
+                            <button class="filter-item filter-item__select js-show-room">
                                 <i class="fa-solid fa-hotel"></i>
                                 <div class="filter_item__combo"> Nhà nguyên căn</div>
                                 <i class="fa-solid fa-rectangle-xmark"></i>
-                            </div>
-                            <div class="filter-item filter-item__select">
+                            </button>
+                            <button class="filter-item filter-item__select js-show-province">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <div class="filter_item__combo">Toàn quốc</div>
                                 <i class="fa-solid fa-angle-right"></i>
-                            </div>
-                            <div class="filter-item filter-item__select">
+                            </button>
+                            <button class="filter-item filter-item__select js-show-price">
                                 <i class="fa-solid fa-money-check-dollar"></i>
                                 <div class="filter_item__scroll">Chọn giá</div>
                                 <i class="fa-solid fa-angle-right"></i>
-                            </div>
-                            <div class="filter-item filter-item__select">
+                            </button>
+                            <button class="filter-item filter-item__select js-show-acreage">
                                 <i class="fa-solid fa-panorama"></i>
                                  <div class="filter_item__scroll">Diện tích</div>
                                 <i class="fa-solid fa-angle-right"></i>
-                            </div>
+                            </button>
                             <div class="filter-item filter-item__submit">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 Tìm kiếm
@@ -116,9 +116,221 @@
     
             </footer>
         </div>
+   
+        <!-- Modal for room -->
+        <div class="modal js-modal-room">
+            <div class="modal-container js-modal-container">
+                <div class="modal-header">
+                    <div class="modal-close">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="modal-content">
+                        Chọn loại phòng
+                    </div>
+                </div>
+                    <div class="modal-body">
+                        <div class="list-province">
+                            <div class="item-province">
+                                <input type="radio" id="hanoi" name="province" value="hanoi"
+                                       checked>
+                                <label for="hanoi">Phòng trọ, nhà trọ</label>
+                            </div>
+
+                            <div class="item-province">
+                                <input type="radio" id="hochiminh" name="province" value="hochiminh"
+                                       checked>
+                                <label for="hochiminh">Nhà thuê nguyên căn</label>
+                            </div>
+                            
+                            <div class="item-province">
+                                <input type="radio" id="danang" name="province" value="danang"
+                                       checked>
+                                <label for="danang">Cho thuê căn hộ</label>
+                            </div>
+        
+                            <div class="item-province">
+                                <input type="radio" id="binhduong" name="province" value="binhduong"
+                                       checked>
+                                <label for="binhduong">Cho thuê căn hộ mini</label>
+                            </div>
+        
+                            <div class="item-province">
+                                <input type="radio" id="dongnai" name="province" value="dongnai"
+                                       checked>
+                                <label for="dongnai">Cho thuê căn hộ dịch vụ</label>
+                            </div>
+        
+                            <div class="item-province">
+                                <input type="radio" id="vungtau" name="province" value="vungtau"
+                                       checked>
+                                <label for="vungtau">Tìm người ở ghép</label>
+                            </div>
+        
+                            <div class="item-province">
+                                <input type="radio" id="cantho" name="province" value="cantho"
+                                       checked>
+                                <label for="cantho">Cho thuê mặt bằng</label>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Modal for province -->
+        <div class="modal js-modal-province">
+            <div class="modal-container js-modal-container">
+                <div class="modal-header">
+                    <div class="modal-close">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="modal-content">
+                        Chọn vị trí
+                    </div>
+                </div>
     
-        <div class="modal">
-            <div class="modal-container">
+                <div class="modal-body">
+                    <div class="list-province">
+                        <div class="item-province">
+                            <input type="radio" id="hanoi" name="province" value="hanoi"
+                                   checked>
+                            <label for="hanoi">Hà nội</label>
+                        </div>
+                      
+                        <div class="item-province">
+                            <input type="radio" id="hochiminh" name="province" value="hochiminh"
+                                   checked>
+                            <label for="hochiminh">Hồ Chí Minh</label>
+                        </div>
+                        
+                        <div class="item-province">
+                            <input type="radio" id="danang" name="province" value="danang"
+                                   checked>
+                            <label for="danang">Đà Nẵng</label>
+                        </div>
+    
+                        <div class="item-province">
+                            <input type="radio" id="binhduong" name="province" value="binhduong"
+                                   checked>
+                            <label for="binhduong">Bình Dương</label>
+                        </div>
+    
+                        <div class="item-province">
+                            <input type="radio" id="dongnai" name="province" value="dongnai"
+                                   checked>
+                            <label for="dongnai">Đồng Nai</label>
+                        </div>
+    
+                        <div class="item-province">
+                            <input type="radio" id="vungtau" name="province" value="vungtau"
+                                   checked>
+                            <label for="vungtau">Bà Rịa - Vũng Tàu</label>
+                        </div>
+    
+                        <div class="item-province">
+                            <input type="radio" id="cantho" name="province" value="cantho"
+                                   checked>
+                            <label for="cantho">Cần Thơ</label>
+                        </div>
+    
+                        <div class="item-province">
+                            <input type="radio" id="khanhhoa" name="province" value="khanhhoa"
+                                   checked>
+                            <label for="khanhhoa">Khánh Hòa</label>
+                        </div>
+    
+                        <div class="item-province">
+                            <input type="radio" id="haiphong" name="province" value="haiphong"
+                                   checked>
+                            <label for="haiphong">Hải Phòng</label>
+                        </div>
+    
+                        <div class="item-province">
+                            <input type="radio" id="angiang" name="province" value="angiang"
+                                   checked>
+                            <label for="angiang">An Giang</label>
+                        </div>
+
+                        <div class="item-province">
+                            <input type="radio" id="bacgiang" name="province" value="bacgiang"
+                                   checked>
+                            <label for="bacgiang">Bắc Giang</label>
+                        </div>
+
+                        <div class="item-province">
+                            <input type="radio" id="bacgiang" name="province" value="bacgiang"
+                                   checked>
+                            <label for="bacgiang">Bạc Liêu</label>
+                        </div>
+
+                        <div class="item-province">
+                            <input type="radio" id="bacgiang" name="province" value="bacgiang"
+                                   checked>
+                            <label for="bacgiang">Bắc Ninh</label>
+                        </div>
+
+                        <div class="item-province">
+                            <input type="radio" id="bacgiang" name="province" value="bacgiang"
+                                   checked>
+                            <label for="bacgiang">Bến Tre</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer js-modal-apply">
+                    Áp dụng
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for price -->
+        <div class="modal js-modal-price">
+            <div class="modal-container js-modal-container">
+                <div class="modal-header">
+                    <div class="modal-close">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="modal-content">
+                        Chọn giá
+                    </div>
+                </div>
+    
+                <div class="modal-body">
+                    <div class="modal-body__ranger">
+                        <div class="ranger-number">20 - 30m<sup>2</sup></div>
+                        <div class="ranger-ruler">
+                        </div>
+                        <div class="ranger-bar">
+                            <div class="ranger-circle"></div>
+                            <div class="ranger-circle"></div>
+                        </div>
+                        <div class="ranger-value">
+                            <p class="ranger-start">0</p>
+                            <p class="ranger-end">15 tr</p>
+                        </div>
+                        <div class="ranger-header">Chọn nhanh</div>
+                        <ul class="ranger-list">
+                            <li class="ranger-item">Dưới 1 triệu đồng</li>
+                            <li class="ranger-item">Từ 1 - 2 triệu đồng</li>
+                            <li class="ranger-item">Từ 2 - 3 triệu đồng</li>
+                            <li class="ranger-item">Từ 3 - 5 triệu đồng</li>
+                            <li class="ranger-item">Từ 5 - 7 triệu đồng</li>
+                            <li class="ranger-item">Từ 7 - 10 triệu đồng</li>
+                            <li class="ranger-item">Từ 10 - 15 triệu đồng</li>
+                            <li class="ranger-item">Trên 15 triệu đồng</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="modal-footer js-modal-apply">
+                    Áp dụng
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for acreage -->
+        <div class="modal js-modal-acreage">
+            <div class="modal-container js-modal-container">
                 <div class="modal-header">
                     <div class="modal-close">
                         <i class="fa-solid fa-arrow-left"></i>
@@ -144,20 +356,21 @@
                         <div class="ranger-header">Chọn nhanh</div>
                         <ul class="ranger-list">
                             <li class="ranger-item">Dưới 20m<sup>2</sup></li>
-                            <li class="ranger-item">Từ 20m<sup>2</sup> - 20m<sup>2</sup></li>
-                            <li class="ranger-item">Từ 20m<sup>2</sup> - 20m<sup>2</sup></li>
-                            <li class="ranger-item">Từ 20m<sup>2</sup> - 20m<sup>2</sup></li>
-                            <li class="ranger-item">Từ 20m<sup>2</sup> - 20m<sup>2</sup></li>
-                            <li class="ranger-item">Từ 20m<sup>2</sup> - 20m<sup>2</sup></li>
+                            <li class="ranger-item">Từ 20m<sup>2</sup> - 30m<sup>2</sup></li>
+                            <li class="ranger-item">Từ 30m<sup>2</sup> - 50m<sup>2</sup></li>
+                            <li class="ranger-item">Từ 50m<sup>2</sup> - 70m<sup>2</sup></li>
+                            <li class="ranger-item">Từ 70m<sup>2</sup> - 90m<sup>2</sup></li>
+                            <li class="ranger-item">Trên 90m<sup>2</sup></li>
                         </ul>
                     </div>
                 </div>
                 
-                <div class="modal-footer">
+                <div class="modal-footer js-modal-apply">
                     Áp dụng
                 </div>
             </div>
         </div>
+
         <div id="webpage">
             <main id="main">
                 <div class="container clearfix">
@@ -1590,5 +1803,97 @@
                 </div>
             </footer>
         </div>
+
+<script>
+    // Get all element show
+    const showRoom = document.querySelector('.js-show-room')
+    const showProvince = document.querySelector('.js-show-province')
+    const showPrice = document.querySelector('.js-show-price')
+    const showAcreage = document.querySelector('.js-show-acreage')
+
+    //Get all element hidden
+    const hiddenList = document.querySelectorAll('.js-modal-apply')
+    const hiddenCloses = document.querySelectorAll('.modal-close')
+
+    //Get element modal of price
+    const modalRoom = document.querySelector('.js-modal-room')
+    const modalProvince = document.querySelector('.js-modal-province')
+    const modalPrice = document.querySelector('.js-modal-price')
+    const modalAcreage = document.querySelector('.js-modal-acreage')
+
+    //Get all element modalContainer
+    const modalContainers = document.querySelectorAll('.js-modal-container')
+
+    //handle add open in modal   Room
+    //handle add remove in modal
+        function showListRooms() {
+            modalRoom.classList.add('open')
+        }
+        function hiddenListRooms() {
+            modalRoom.classList.remove('open')
+        }
+    
+    //handle add open in modal   Province
+    //handle add remove in modal
+         function showListProvinces() {
+            modalProvince.classList.add('open')
+        }
+        function hiddenListProvinces() {
+            modalProvince.classList.remove('open')
+        }
+
+    //handle add open in modal   Price
+    //handle add remove in modal
+        function showListPrices() {
+            modalPrice.classList.add('open')
+        }
+        function hiddenListPrices() {
+            modalPrice.classList.remove('open')
+        }
+    
+    //handle add open in modal   Acreage
+    //handle add remove in modal
+        function showListAcreages() {
+            modalAcreage.classList.add('open')
+        }
+        function hiddenListAcreages() {
+            modalAcreage.classList.remove('open')
+        }
+    
+    //add event while click
+        showRoom.addEventListener('click', showListRooms)
+        showProvince.addEventListener('click', showListProvinces)
+        showPrice.addEventListener('click', showListPrices)
+        showAcreage.addEventListener('click', showListAcreages)
+
+    //remove event while click with button apply
+    for(const hiddenItem of hiddenList ){
+        hiddenItem.addEventListener('click', hiddenListRooms)||
+        hiddenItem.addEventListener('click',hiddenListProvinces)||
+        hiddenItem.addEventListener('click',hiddenListPrices)||
+        hiddenItem.addEventListener('click',hiddenListAcreages)
+    }
+
+        //remove event while click with button close
+        for(const hiddenClose of hiddenCloses ){
+        hiddenClose.addEventListener('click',hiddenListRooms)||
+        hiddenClose.addEventListener('click',hiddenListProvinces)||
+        hiddenClose.addEventListener('click',hiddenListPrices)||
+        hiddenClose.addEventListener('click',hiddenListAcreages)
+    }
+
+    //remove event while click with background
+        modalRoom.addEventListener('click', hiddenListRooms)
+        modalProvince.addEventListener('click', hiddenListProvinces)
+        modalPrice.addEventListener('click', hiddenListPrices)
+        modalAcreage.addEventListener('click', hiddenListAcreages)
+    
+    //handle remove bubble in modalContainer
+        for(const modalContainer of modalContainers){
+            modalContainer.addEventListener('click', function(event) {
+                event.stopPropagation()
+            })
+        }
+</script>
     </body>
 </html>
