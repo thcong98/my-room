@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./asscets/css/base.css">
     <link rel="stylesheet" href="./asscets/css/main.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./asscets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -20,23 +20,36 @@
             <header class="header">
                 <div class="grid">
                     <nav class="navbar">
+                        <!-- logo -->
                         <ul class="navbar__list">
-                            <li class="navbar__item"><a href="#" class="navbar__logo"><img src="asscets/img/motel.png"></a></li>
+                            <li class="navbar__item"><a href="#" class="navbar__logo">
+                                <img src="asscets/img/motel.png"></a></li>
                         </ul>
         
+                        <!-- Login and Register -->
                         <ul class="navbar__list">
                             <li class="navbar__item"><p>MyRoom kính chào quý khách!</p></li>
                             <li class="navbar__item">
-                                <a href="" class="navbar__link navbar__link--strong navbar__link--blue">Đăng nhập</a>
+                                <a href="" class="navbar__link navbar__link--strong navbar__link--blue">
+                                    Đăng nhập
+                                </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="" class="navbar__link navbar__link--strong navbar__link--blue">Đăng ký</a>
+                                <a href="" class="navbar__link navbar__link--strong navbar__link--blue">
+                                    Đăng ký
+                                </a>
                             </li>
-                            <li class="navbar__item"><a href="" class="navbar__link navbar__link--strong navbar__link--red">Đăng tin mới<i class="fa-solid fa-plus"></i></a></li>
+                            <li class="navbar__item">
+                                <a href="" class="navbar__link navbar__link--strong navbar__link--red">
+                                Đăng tin mới
+                                <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
     
+                <!-- Menu trang web -->
                 <div class="navbar-menu">
                     <div class="grid">
                         <ul class="navbar-menu__list">
@@ -88,7 +101,9 @@
                 <div class="grid1100">
                     <div class="wellcome">
                         <div class="wellcome__header">Kênh thông tin Phòng Trọ số 1 Việt Nam</div>
-                        <div class="wellcome__body">Kênh thông tin Phòng Trọ số 1 Việt Nam - Website đăng tin cho thuê phòng trọ, nhà nguyên căn, căn hộ, ở ghép nhanh, hiệu quả với 100.000+ tin đăng và 2.500.000 lượt xem mỗi tháng.</div>
+                        <div class="wellcome__body">Kênh thông tin Phòng Trọ số 1 Việt Nam - 
+                            Website đăng tin cho thuê phòng trọ, nhà nguyên căn, căn hộ, ở ghép nhanh, 
+                            hiệu quả với 100.000+ tin đăng và 2.500.000 lượt xem mỗi tháng.</div>
                     </div>
                     <div class="location__clearfix">
                        <div class="location__provine">
@@ -1815,7 +1830,7 @@
     const hiddenList = document.querySelectorAll('.js-modal-apply')
     const hiddenCloses = document.querySelectorAll('.modal-close')
 
-    //Get element modal of price
+    //Get all element modal 
     const modalRoom = document.querySelector('.js-modal-room')
     const modalProvince = document.querySelector('.js-modal-province')
     const modalPrice = document.querySelector('.js-modal-price')
