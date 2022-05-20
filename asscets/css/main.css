@@ -282,7 +282,7 @@
 }
 
 .ranger-value {
-display: flex;
+    display: flex;
    justify-content: space-between;
    font-size: 12px;
    margin: 12px 24px 0px;
@@ -341,4 +341,63 @@ display: flex;
 .item-province {
     padding: 12px 0;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.login-container {
+    width: 600px;
+    min-height: 400px;
+    border: 1px solid rgb(234,234,234);
+    padding: 32px;
+    border-radius: 8px;
+    background-color: white;
+    margin-left: 250px;
+}
+
+.login-title {
+
+}
+
+.login-label {
+    display: block;
+    padding: 20px 0 8px 0;
+}
+
+.login-input {
+    width: 100%;
+    border-radius: 4px;
+    background-color: #e8f0fe;
+    padding: 8px 0px;
+    font-size: 15px;
+    border: 1px solid #e8f0fe;
+}
+
+.login-footer_container {
+    justify-content: space-between;
+}
+
+.login-submit {
+    text-transform: none;
+    margin: 12px 0px;
+    padding: 12px 0px;
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    background: #3961fb;
+}
+
+.login-footer_container {
+    justify-content: space-between;
+    margin-top: 12px;
+    display: flex;
+}
+
+.register_forgot-pw {
+    font-size: 13px;
+    margin: 12px 0;
+}
+
+.register_new-acc {
+    font-size: 13px;
+    margin: 12px 0;
 }
