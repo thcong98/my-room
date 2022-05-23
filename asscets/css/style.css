@@ -733,14 +733,14 @@ footer{
     display: flex;
     align-items: center;
     border-right: 1px solid #ddd;
-    padding-right: 20px;
-    margin-right: 20px;
+    padding-right: 12px;
+    margin-right: 16px;
 }
 .bottom-links .links-col-title {
     display: inline-block;
     padding: 7px 0;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 14px;
 }
 .bottom-links .btn-show-sublink {
     background: url(/img/down-arrow.svg) center no-repeat;
@@ -751,12 +751,12 @@ footer{
     content: "";
     cursor: pointer;
 }
-.bottom-links ul.show-sublink {
+/* .bottom-links ul.show-sublink {
     display: none;
 }
 .bottom-links ul {
     display: none;
-}
+} */
 a:hover {
     color: #f60;
     text-decoration: none;
@@ -797,12 +797,5 @@ li {
      text-align: -webkit-match-parent;
 }
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
+
 

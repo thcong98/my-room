@@ -401,3 +401,92 @@
     font-size: 13px;
     margin: 12px 0;
 }
+
+.sub-menu_item {
+    display: none;
+}
+
+.show-sublink:hover .sub-menu_item {
+    display: block;
+}
+
+.overview-footer {
+    display: flex;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.overview-intro {
+    height: 128px;
+    width: 374px;
+    margin:8px;
+}
+
+.overview-infor {
+    width: 242px;
+    margin:8px;
+}
+.title-infor,
+.title-support,
+.title-contact,
+.title-pay {
+    font-weight: bold;
+}
+
+.content-infor {
+    line-height: 18px;
+    margin: 16px 0;
+}
+
+.content-support {
+    line-height: 18px;
+    margin: 16px 0;
+}
+
+.overview-support {
+    width: 222px;
+    margin:8px;
+}
+
+.overview-contact {
+    width: 222px;
+}
+
+.contact-list{
+    display: flex;
+}
+
+.pay-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-contact{
+    width: 35px;
+    margin:8px;
+}
+
+.logo-pay
+{
+    margin: 4px 0px;
+    height: 35px;
+    border: 1px solid rgb(229, 228, 228);
+}
+
+.title-company {
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-company {
+    text-align: center;
+}
+
+.logo-company-list {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-company {
+    height: 50px;
+    border: 1px solid rgb(229, 228, 228);
+}
